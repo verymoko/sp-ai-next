@@ -5,15 +5,13 @@ export default function AmPage() {
   return (
     <div className={styles.container}>
       
-      {/* Карточка Дизайнера (остается кнопкой) */}
       <Link href="/i/am/designer" style={{ textDecoration: 'none' }}>
         <div className={styles.card}>
-          <img src="/designer.jpg" alt="Дизайнер" className={styles.image} />
+          <img src="/sp-ai-next/designer.jpg" alt="Дизайнер" className={styles.image} />
           <h2 style={{ marginTop: '15px' }}>Я — Дизайнер</h2>
         </div>
       </Link>
 
-      {/* Инженер (теперь просто текстовая ссылка) */}
       <Link href="/i/am/engineer" className={styles.link}>
         Я — Инженер
       </Link>
