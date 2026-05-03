@@ -4,6 +4,8 @@ export default function Home() {
   return (
     <main style={{
       display: 'flex',
+      flexDirection: 'column',
+      gap:'20px',
       justifyContent: 'center',
       alignItems: 'center',
       minHeight: '100vh',
@@ -23,6 +25,16 @@ export default function Home() {
         }}
       >
         Перейти в i/am
+      </Link>
+      <Link 
+        href="https://github.com/verymoko/sp-ai-next" 
+        style={{
+          color: '#0079a6',
+          textDecoration: 'none',
+          fontSize: '20px',
+        }}
+      >
+        Страница на гитхабе
       </Link>
     </main>
   );
