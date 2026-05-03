@@ -4,8 +4,7 @@ export default function DesignerLayout({
   children: React.ReactNode
 }) {
   return (
-    // Убираем backgroundColor и padding отсюда
-    <div style={{ minHeight: '100vh' }}>
+    <div className="min-h-screen">
       {children}
     </div>
   )

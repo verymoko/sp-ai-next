@@ -1,12 +1,11 @@
 export default function ManagerPage() {
   return (
-    <div style={{ 
-      backgroundColor: '#b7b7b7', 
-      color: '#006127', 
-      minHeight: '100vh', 
-      padding: '20px' 
-    }}>
-      <h1>Макс</h1>
+    <div className="bg-slate-100 min-h-screen p-5">
+      
+      <h1 className="text-2xl text-green-600">
+        Макс
+      </h1>
+
     </div>
   );
 }
