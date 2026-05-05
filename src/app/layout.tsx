@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-// Импортируем Onest из библиотеки Google-шрифтов Next.js
 import { Onest } from "next/font/google";
 import "./globals.css";
 
-// Инициализируем шрифт, обязательно добавляем кириллицу
-const onest = Onest({ subsets: ["latin", "cyrillic"] });
+const onest = Onest({ 
+  subsets: ["latin", "cyrillic"],
+  variable: '--font-onest', // создаем переменную
+});
 
-// Заодно поправим заголовок, который отображается на вкладке браузера
 export const metadata: Metadata = {
-  title: "Я — Дизайнер",
-  description: "Мой первый проект на Next.js",
+  title: "Я — Дизайнер"
 };
 
 export default function RootLayout({
@@ -18,10 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // Меняем язык на русский
-    <html lang="ru">
-      {/* Применяем класс шрифта ко всему содержимому сайта */}
-      <body className={onest.className}>
+    <html lang="ru" className={onest.variable}>
+      <body className="bg-white antialiased font-sans">
         {children}
       </body>
     </html>

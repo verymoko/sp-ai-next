@@ -84,7 +84,7 @@ export default function AmPage() {
             className="fixed pointer-events-none z-0 transition-opacity duration-200 w-48 md:w-64 mix-blend-multiply"
             style={{
               left: mousePos.x,
-              top: hoveredLink === 'engineer' ? mousePos.y - 200 : mousePos.y + 20,
+              top: hoveredLink === 'engineer' ? mousePos.y - 250 : mousePos.y + 10,
               transform: 'translateX(-50%)' 
             }}
           />
